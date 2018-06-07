@@ -1,8 +1,66 @@
 @import 'custom-bootstrap.scss';
 // @import "~styles/bootstrap/scss/bootstrap";
 
+/*-===== dev ===== */
+.debug {
+  border: 2px solid red;
+}
+/*============ Utility classes. 
+ Use swush for faster ease of development ============*/
+
+.fill-viewport {
+  min-height: 100vh
+}
+.fill-40-viewport {
+  min-height: 40vh
+}
+.fill-60-viewport {
+  min-height: 60vh
+}
+.fill-80-viewport {
+  min-height: 80vh
+}
+.fill-90-viewport {
+  min-height: 90vh
+}
+.jumbotron-transparent {
+  background-color: transparent
+}
+.text-white-70 {
+  color: rgba(255,255,255,0.7)
+}
+.text-black-70 {
+  color: rgba(0,0,0,0.7)
+}
+.text-black-40 {
+  color: rgba(0,0,0,0.4)
+}
+.text-white-40 {
+  color: rgba(255,255,255,0.4)
+}
+.text-secondary-pink {
+  color: $secondary-pink;
+}
+
+#menu {
+  .nav-item {
+    font-weight: 500;
+  }
+
+  .navbar-separator {
+    border-top: 1px solid $primary;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: 0;
+  }
+}
+
 #introduction {
-    background: linear-gradient(rgba(100,181,246 ,1), rgba(0,0,0,0.8)), url('http://bit.ly/2fBj6OJ') 0% 0%/cover 
+    .introduction-inner {
+      background: url('http://www.caraccidentdoctors.ca/wp-content/uploads/2016/01/teamofdoctors.jpg') 0% 0%/cover 
+    }
   }
   
   
@@ -13,42 +71,10 @@
   
   #feature-rundown img {
     width: 120px;
+
   }
   
-  /*-===== dev ===== */
-  .debug {
-    border: 2px solid red;
-  }
-  /*============ Utility classes. 
-   Use swush for faster ease of development ============*/
   
-  .fill-viewport {
-    min-height: 100vh
-  }
-  .fill-40-viewport {
-    min-height: 40vh
-  }
-  .fill-80-viewport {
-    min-height: 80vh
-  }
-  .fill-90-viewport {
-    min-height: 90vh
-  }
-  .jumbotron-transparent {
-    background-color: transparent
-  }
-  .text-white-70 {
-    color: rgba(255,255,255,0.7)
-  }
-  .text-black-70 {
-    color: rgba(0,0,0,0.7)
-  }
-  .text-black-40 {
-    color: rgba(0,0,0,0.4)
-  }
-  .text-white-40 {
-    color: rgba(255,255,255,0.4)
-  }
   
   /*== 1. 
     1. Borders along x an y
@@ -81,3 +107,9 @@
       flex-basis: 50%
     }  
   }
+
+#related-sources {
+  .related-source-img {
+    max-width: 100%;
+  }
+}
