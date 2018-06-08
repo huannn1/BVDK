@@ -5,6 +5,7 @@
 .debug {
   border: 2px solid red;
 }
+
 /*============ Utility classes. 
  Use swush for faster ease of development ============*/
 
@@ -41,6 +42,27 @@
 .text-secondary-pink {
   color: $secondary-pink;
 }
+.line-height-1 {
+  line-height: 0.25rem;
+}
+.line-height-2 {
+  line-height: 0.5rem;
+}
+.line-height-3 {
+  line-height: 1rem;
+}
+.line-height-4 {
+  line-height: 2rem;
+}
+.line-height-5 {
+  line-height: 3rem;
+}
+.border-secondary-pink {
+  border: 1px solid $secondary-pink;
+}
+.btn-secondary-pink {
+  background-color: $secondary-pink;
+}
 
 #menu {
   .nav-item {
@@ -56,12 +78,6 @@
     outline: 0;
   }
 }
-
-#introduction {
-    .introduction-inner {
-      background: url('http://www.caraccidentdoctors.ca/wp-content/uploads/2016/01/teamofdoctors.jpg') 0% 0%/cover 
-    }
-  }
   
   
   #info-family {
@@ -75,7 +91,6 @@
     width: 120px;
 
   }
-  
   
   
   /*== 1. 
@@ -130,4 +145,127 @@
         width: 100%;
         height: 100%;
     }
+}
+
+// Social Network
+.social {
+  .social-item {
+    font-size: 2rem;
+  }
+
+  .social-item-fb {
+    color: #4766B0;
+  }
+
+  .social-item-yt {
+    color: #FA0019;
+  }
+}
+
+// Breadcrumb
+.breadcrumb {
+  background-color: $primary;
+  border-radius: 0;
+  border-bottom: 0.5rem solid #9FBDE3;
+  
+  .breadcrumb-item.active, 
+  .breadcrumb-item + .breadcrumb-item::before,
+  a {
+    color: $white;
+  }
+}
+
+.feedbacks {
+  .feedback {
+
+  }
+
+  .feedback-content {
+    border-radius: 1rem;
+    position: relative;
+  }
+
+  .feedback-content:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-right: 1rem solid #284098;
+    left: -1rem;
+    top: 50%;
+    margin-top: -1rem;
+  }
+}
+
+.intro-header-background {
+  .intro-header-text {
+    display: inline-block;
+    padding: 0 3rem;
+    background-color: $secondary-pink;
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 4rem;
+    color: $white;
+    opacity: .8;
+    border-radius: 2rem;
+  }
+}
+
+.box-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .box-menu-header {
+    background-color: $primary;
+    padding: 0.5rem;
+    text-align: center;
+    color: $white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .box-menu-item {
+    background-color: #EEE;
+    padding: 0 1rem;
+  }
+
+  .box-menu-item-link {
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #DDD;
+  }
+
+  .box-menu-item:last-child {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    .box-menu-item-link{
+      border-bottom: 0;
+     }
+  }
+}
+
+.pagination-dot {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .pagination-dot-item {
+    padding: 0.5rem;
+  }
+
+  .pagination-dot-link {
+    display: block;
+    background-color: $secondary-pink;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 }
