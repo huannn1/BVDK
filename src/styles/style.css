@@ -8536,53 +8536,15 @@ a.text-dark:hover, a.text-dark:focus {
   outline: 0;
 }
 
-#feature-rundown img {
-  width: 120px;
-}
-
-/*== 1. 
-    1. Borders along x an y
-    2. Borders with colors i.e the shades of white and gray above
-    3. Unordered list with borders all round
-    4. Unordered list with borders along y, as in pricing table here
-    5. Border size class*/
-.list-border-y li {
-  border-top: 1px solid;
-}
-
-.list-border-y li:last-child {
-  border-bottom: 1px solid;
-}
-
-.list-border-black-20 li,
-.list-border-black-20 li:last-child {
-  border-color: rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (min-width: 768px) {
-  /*need to set flex-basis and have it dependent on size too
-    usage tip: if you want the element to NOT be positioned in the
-    center, add this class to a non `.container` div. Container divs in
-    bootstrap are styled to seat in the center of the page. 
-    */
-  .basis-md-50 {
-    flex-basis: 50%;
-  }
-}
-
-#related-sources .related-source-img {
-  max-width: 100%;
-}
-
-#main-features .main-feature {
+.main-features .main-feature {
   position: relative;
   display: block;
   padding-bottom: 100%;
-  background-color: lightblue;
+  background-color: #6c757d;
   border-radius: 1rem;
 }
 
-#main-features .main-feature-content {
+.main-features .main-feature-content {
   position: absolute;
   width: 100%;
   height: 100%;
